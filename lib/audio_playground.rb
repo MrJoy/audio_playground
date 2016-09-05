@@ -1,5 +1,6 @@
 require "logger-better"
 require "coreaudio"
+require "numru/fftw3"
 
 module AudioPlayground
   def self.logger; @logger; end
@@ -16,6 +17,9 @@ require_relative "./audio_playground/cli/argument_parser"
 require_relative "./audio_playground/task/task"
 require_relative "./audio_playground/task/unmanaged_task"
 require_relative "./audio_playground/task/managed_task"
+
+require_relative "./audio_playground/audio/stream_filter"
+require_relative "./audio_playground/audio/stream_reporter"
 
 require_relative "./audio_playground/audio/input_stream"
 require_relative "./audio_playground/audio/device_input_stream"

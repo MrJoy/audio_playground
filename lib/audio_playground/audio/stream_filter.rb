@@ -8,13 +8,15 @@ module AudioPlayground
         @window   = stream.window
         @handler  = handler
         @span     = span
-        super("StreamFilter", :late, logger) do
-          frame, drop_count = read_frame
-          if frame
-            process_frame(frame, drop_count)
-          else
-            @end_signal = true
-          end
+        super("StreamFilter", :late, logger)
+      end
+
+      def iterate
+        frame, drop_count = read_frame
+        if frame
+          process_frame(frame, drop_count)
+        else
+          @end_signal = true
         end
       end
 

@@ -2,8 +2,8 @@ module AudioPlayground
   module Audio
     # Input stream class to read from an input device using CoreAudio.
     class DeviceInputStream < InputStream
-      def initialize(device_name, window, logger)
-        @input_device = CoreAudio.devices.find { |dev| dev.name =~ /#{device_name}/ }
+      def initialize(device_id, window, logger)
+        @input_device = CoreAudio.devices.find { |dev| dev.devid == device_id }
         fail "No such device ID!" unless @input_device
 
         @name         = @input_device.name
