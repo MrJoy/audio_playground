@@ -26,3 +26,12 @@ bin/sm-audio-processor --input-device=39 --map=0,1 --window=8192 --span=16 --mod
 ```
 
 The audio will lag considerably due to the size of the sliding window / span parameters.  As my math is... not close to correct yet, reducing these parameters reduces the quality of the filtering considerably.
+
+
+## Testing
+
+```bash
+bin/test.sh
+```
+
+This will run some simple regression tests to ensure that the filter behavior hasn't changed, using a variety of pure sine-wave recordings.  To see if the behavior has changed, do `git status` to see if any of the files in `test/results` have been changed.
