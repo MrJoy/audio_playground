@@ -1,4 +1,5 @@
 require "logger-better"
+require "coreaudio"
 
 module AudioPlayground
   def self.logger; @logger; end

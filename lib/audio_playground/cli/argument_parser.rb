@@ -20,7 +20,7 @@ module AudioPlayground
         flags, other = extract_arguments(argv)
         flags.each do |(arg, name, kind, value)|
           break unless check_arg!(arg, name, kind, value)
-          @handlers[name].call(value, options, name)
+          @handlers[name].call(value, options, name) if @handlers[name]
         end
 
         check_results!
@@ -51,6 +51,8 @@ module AudioPlayground
       end
 
       def allowed?(arg, name, value)
+        return true if @required[name] && !@allowed[name]
+
         allowed = @allowed[name]
         result  = allowed.respond_to?(:include?) ? allowed.include?(value) : allowed
         unrecognized_arg!(arg) unless allowed
@@ -103,8 +105,8 @@ module AudioPlayground
         error! do
           prefix = "Got invalid value ('#{value}') for #{name}!"
           case [allowed.respond_to?(:include?), allowed.is_a?(Range)]
-          when [true, true] then "#{prefix}  Must be within #{allowed.first}..#{allowed.last}."
-          when [true, false] then "#{prefix}  Must be one of: #{allowed.join(', ')}."
+          when [true, true]   then "#{prefix}  Must be within #{allowed.first}..#{allowed.last}."
+          when [true, false]  then "#{prefix}  Must be one of: #{allowed.join(', ')}."
           else
             prefix
           end
