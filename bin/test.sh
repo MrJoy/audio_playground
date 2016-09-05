@@ -1,9 +1,14 @@
 #!/bin/bash
+BASE_DIR=$(
+  cd "$(dirname "$(readlink "$0" || echo "$0")")"
+  /bin/pwd
+)
+TEST_DIR="$BASE_DIR/../test"
 
 WINDOW=8192
 SPAN=32
 for FREQ in 44100 96k; do
-  FNAME="test/results/${FREQ}"
+  FNAME="$TEST_DIR/results/${FREQ}"
   if [ -e "${FNAME}" ]; then
     rm "${FNAME}"
   fi
@@ -17,7 +22,7 @@ for FREQ in 44100 96k; do
         OPTS=""
         echo "${HZ}Hz/${FREQ}Hz, Window=${WINDOW}, Filtered:" >> "${FNAME}"
       fi
-      time bin/sm-audio-processor --input-file=test/fixtures/Sin${HZ}Hz\@0dB24bit${FREQ}HzM.caf --window=${WINDOW} --span=${SPAN} $OPTS |
+      time "$BASE_DIR"/sm-audio-processor --input-file="$TEST_DIR/fixtures/Sin${HZ}Hz@0dB24bit${FREQ}HzM.caf" --window=${WINDOW} --span=${SPAN} $OPTS |
         grep 'INFO:' |
         grep -v 'Channel' |
         perl -pse 's/^.*?INFO: //g' >> "${FNAME}"
