@@ -11,10 +11,12 @@ buf = dev.output_buffer(WINDOW)
 
 phase = Math::PI * 2.0 * 440.0 / dev.nominal_rate
 th = Thread.start do
-  i = 0
+  i   = 0
   wav = NArray.sint(WINDOW)
   loop do
-    WINDOW.times { |j| wav[j] = (VOLUME * Math.sin(phase * (i + j))).round }
+    WINDOW.times do |j|
+      wav[j] = (VOLUME * Math.sin(phase * (i + j))).round
+    end
     i += WINDOW
     buf << wav
   end
