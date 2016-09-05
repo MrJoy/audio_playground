@@ -43,7 +43,7 @@ parser
   .allow!(:span, allowed: SPANS)       { |vv, rr| rr[:span]   = vv.to_i }
   .allow!(:mode, allowed: MODES)       { |vv, rr| rr[:mode]   = vv.to_sym }
   .allow!(:input_device, kind: :input) { |vv, rr| rr[:in] = [IN_DEV, vv.to_i] }
-  .allow!(:input_file, kind: :input)   { |vv, rr| rr[:in] = [IN_FILE, vv.to_i] }
+  .allow!(:input_file, kind: :input)   { |vv, rr| rr[:in] = [IN_FILE, vv] }
 
 options, leftovers = parser.parse!(ARGV)
 if leftovers.length > 0
