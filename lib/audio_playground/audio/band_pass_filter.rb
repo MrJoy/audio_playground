@@ -75,7 +75,10 @@ module AudioPlayground
         clear(fft, high_pass_ranges[1])
       end
 
-      def clear(data, range); data[range] = 0; end
+      def clear(data, range)
+        return if range.size == 0
+        data[range] = 0
+      end
 
       # def bin_freq(idx); (idx.to_f / @sample_rate / @half.to_f); end
       def freq_bin(hz); (hz / (@sample_rate.to_f / @window.to_f)).round + 1; end
