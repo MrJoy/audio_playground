@@ -1,11 +1,9 @@
 #!/usr/bin/env ruby
 lib = File.expand_path("../../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "sparkle_motion"
-SparkleMotion.init!
-SparkleMotion.use_cli!
-SparkleMotion.use_audio!
-LOGGER = SparkleMotion.logger
+require "audio_playground"
+AudioPlayground.init!
+LOGGER = AudioPlayground.logger
 require "set"
 
 Thread.abort_on_exception = true
@@ -23,9 +21,9 @@ def pot?(value); value.to_s(2).split(//).sort.map(&:to_i).inject(:+) == 1; end
 MODES   = %w(interactive batch)
 WINDOWS = (4..15).map { |n| 2 << n }.map(&:to_s)
 SPANS   = ("1".."1024")
-IN_DEV  = SparkleMotion::Audio::DeviceInputStream
-IN_FILE = SparkleMotion::Audio::FileInputStream
-parser  = SparkleMotion::CLI::ArgumentParser
+IN_DEV  = AudioPlayground::Audio::DeviceInputStream
+IN_FILE = AudioPlayground::Audio::FileInputStream
+parser  = AudioPlayground::CLI::ArgumentParser
           .new(window:          512,
                span:            4,
                low:             true,
@@ -56,21 +54,21 @@ end
 in_stream = options[:in][0].new(options[:in][1], options[:window], LOGGER)
 puts "#{in_stream.name}: Sample rate is #{in_stream.sample_rate}hz."
 
-reporter = SparkleMotion::Audio::StreamReporter.new(in_stream.name, 1.0, LOGGER)
+reporter = AudioPlayground::Audio::StreamReporter.new(in_stream.name, 1.0, LOGGER)
 
 use_low   = options[:low]
 use_high  = options[:high]
 range     = options[:frequency_range]
 span      = options[:span]
 window    = options[:window]
-filter    = SparkleMotion::Audio::BandPassFilter
+filter    = AudioPlayground::Audio::BandPassFilter
             .new(range, in_stream.sample_rate, window * span, use_low, use_high) do |ss, ee, cc|
               puts "#{in_stream.name}: #{cc} bins, from #{ss} to #{ee}."
               reporter.reset!
             end
 
 if options[:map]
-  out_stream = SparkleMotion::Audio::DeviceOutputStream.new(in_stream.sample_rate, options[:window])
+  out_stream = AudioPlayground::Audio::DeviceOutputStream.new(in_stream.sample_rate, options[:window])
   puts "#{out_stream.name}: Sample rate is #{out_stream.sample_rate}hz."
 end
 
@@ -78,7 +76,7 @@ end
 # TODO: ... or maybe this? http://www.jackosx.com/
 # http://www.abstractnew.com/2014/04/the-fast-fourier-transform-fft-without.html
 
-processor = SparkleMotion::Audio::StreamFilter.new(in_stream, filter, LOGGER, span) do |snap, dc|
+processor = AudioPlayground::Audio::StreamFilter.new(in_stream, filter, LOGGER, span) do |snap, dc|
   computed =  snap
               .map do |data|
                 # mean, stddev, rms, rmsdev, median
