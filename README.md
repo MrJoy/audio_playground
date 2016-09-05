@@ -2,6 +2,8 @@
 
 Playground for me to play with FFTs and CoreAudio.
 
+This code was all written between 9pm and 2am while preparing for my wedding, so...  my apologies.
+
 
 ## Installation
 
