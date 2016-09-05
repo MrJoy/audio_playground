@@ -7,6 +7,8 @@ This code was all written between 9pm and 2am while preparing for my wedding, so
 
 ## Installation
 
+__This code is tied to CoreAudio and thus will only run on OS X!__
+
 After cloning this repo, run:
 
 ```bash
