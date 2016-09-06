@@ -13,7 +13,7 @@ for FREQ in 44k 96k; do
     rm "${FNAME}"
   fi
   touch "${FNAME}"
-  for HZ in 125 250 500 1000 2000 4000 8000; do
+  for HZ in 125 250 500 1000 2000 4000 8000 16000 22050; do
     for PARAMS in 0 1; do
       if [ $PARAMS == 0 ]; then
         OPTS="--skip-low --skip-high"
