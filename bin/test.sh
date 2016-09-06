@@ -7,7 +7,7 @@ TEST_DIR="$BASE_DIR/../test"
 
 WINDOW=8192
 SPAN=32
-for FREQ in 44100 96k; do
+for FREQ in 44k 96k; do
   FNAME="$TEST_DIR/results/${FREQ}"
   if [ -e "${FNAME}" ]; then
     rm "${FNAME}"
