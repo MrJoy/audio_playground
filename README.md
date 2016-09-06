@@ -27,6 +27,9 @@ To run the crude band-pass filter in interactive mode where you can tweak the pa
 bin/sm-discover-audio
 # Replace '39' below with the ID listed for 'Built-in Microphone' from above:
 bin/sm-audio-processor --input-device=39 --map=0,1 --window=8192 --span=4 --mode=interactive
+
+# Non-interactive, against a pure sine-wave:
+bin/sm-audio-processor --input-file="test/fixtures/Sin125Hz@0dB24bit44100HzM.caf" --window=8192 --span=4 --map=0,1
 ```
 
 The audio will lag considerably due to the size of the sliding window / span parameters.  As my math is... not close to correct yet, reducing these parameters reduces the quality of the filtering considerably.
