@@ -120,7 +120,7 @@ module AudioPlayground
 
       def r_str(range)
         meh = (0..(@window - 1)).to_a[range]
-        "#{bounce(meh.first)}..#{bounce(meh.last)}"
+        "#{bounce(meh.first) rescue nil}..#{bounce(meh.last) rescue nil}"
       end
 
       def debug_filter(phase, _channel, _channel_data, data)
@@ -148,19 +148,19 @@ module AudioPlayground
         $stdout.puts "High: #{high_pass_ranges.inspect}"
         if high_pass_ranges
           $stdout.puts "High: [#{r_str(high_pass_ranges[0])}, #{r_str(high_pass_ranges[1])}]"
-          tmp = data[high_pass_ranges[0]].map(&:magnitude).real.round.to_a
-          $stdout.puts "[#{tmp.length}]:   #{tmp.join(', ')}"
-          tmp = data[high_pass_ranges[1]].map(&:magnitude).real.round.to_a.reverse
-          $stdout.puts "[#{tmp.length}]:   #{tmp.join(', ')}"
+          # tmp = data[high_pass_ranges[0]].map(&:magnitude).real.round.to_a
+          # $stdout.puts "[#{tmp.length}]:   #{tmp.join(', ')}"
+          # tmp = data[high_pass_ranges[1]].map(&:magnitude).real.round.to_a.reverse
+          # $stdout.puts "[#{tmp.length}]:   #{tmp.join(', ')}"
         end
 
         $stdout.puts "Low: #{low_pass_ranges.inspect}"
         if low_pass_ranges
           $stdout.puts "Low: [#{r_str(low_pass_ranges[0])}, #{r_str(low_pass_ranges[1])}]"
-          tmp = data[low_pass_ranges[0]].map(&:magnitude).real.round.to_a
-          $stdout.puts "[#{tmp.length}]:   #{tmp.join(', ')}"
-          tmp = data[low_pass_ranges[1]].map(&:magnitude).real.round.to_a.reverse
-          $stdout.puts "[#{tmp.length}]:   #{tmp.join(', ')}"
+          # tmp = data[low_pass_ranges[0]].map(&:magnitude).real.round.to_a
+          # $stdout.puts "[#{tmp.length}]:   #{tmp.join(', ')}"
+          # tmp = data[low_pass_ranges[1]].map(&:magnitude).real.round.to_a.reverse
+          # $stdout.puts "[#{tmp.length}]:   #{tmp.join(', ')}"
         end
         $stdout.puts ">>>>>"
         $stdout.flush
