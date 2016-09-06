@@ -29,7 +29,7 @@ bin/sm-discover-audio
 bin/sm-audio-processor --input-device=39 --map=0,1 --window=8192 --span=4 --mode=interactive
 
 # Non-interactive, against a pure sine-wave:
-bin/sm-audio-processor --input-file="test/fixtures/Sin125Hz@0dB24bit44100HzM.caf" --window=8192 --span=4 --map=0,1
+bin/sm-audio-processor --input-file="test/fixtures/Sin125Hz@0dB24bit44kHzM.caf" --window=8192 --span=4 --map=0,1
 ```
 
 The audio will lag considerably due to the size of the sliding window / span parameters.  As my math is... not close to correct yet, reducing these parameters reduces the quality of the filtering considerably.
