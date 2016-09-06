@@ -56,8 +56,8 @@ puts "#{in_stream.name}: Sample rate is #{in_stream.sample_rate}hz."
 
 reporter = AudioPlayground::Audio::StreamReporter.new(in_stream.name, 1.0, LOGGER)
 
-use_low   = options[:low]
-use_high  = options[:high]
+use_low   = !options[:skip_low]
+use_high  = !options[:skip_high]
 range     = options[:frequency_range]
 span      = options[:span]
 window    = options[:window]
