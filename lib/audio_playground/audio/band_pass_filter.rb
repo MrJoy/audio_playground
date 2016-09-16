@@ -86,8 +86,10 @@ module AudioPlayground
       def freq_bin(hz); (hz / (@sample_rate.to_f / @window.to_f)).round + 1; end
 
       def compute_bins!
-        # Halfcomplex format puts real components in first half of array, then imaginary in second
-        # half.
+        # "For those who like to think in terms of positive and negative frequencies, this means
+        # that the positive frequencies are stored in the first half of the output and the negative
+        # frequencies are stored in backwards order in the second half of the output. (The frequency
+        # -k/n is the same as the frequency (n-k)/n.)"
         old_end     = @bin_end
         old_start   = @bin_start
         @bin_end    = min(freq_bin(@frequency_range.last), @half - 1)
