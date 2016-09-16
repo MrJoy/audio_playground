@@ -10,7 +10,7 @@ ruby "2.3.1"
 # http://gridflow.ca/
 # http://rb-gsl.rubyforge.org/
 # http://ruby.gfd-dennou.org/
-gem "ruby-fftw3", "~> 0.4.2",   require: false
+gem "ruby-fftw3", "~> 1.0.2",   require: false
 gem "coreaudio",  "~> 0.0.11",  require: false
 gem "logger-better",            require: false
 # See:
