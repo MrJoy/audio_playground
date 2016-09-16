@@ -64,15 +64,17 @@ module AudioPlayground
       def apply_low_pass!(fft)
         return unless @enable_low
 
-        clear(fft, low_pass_ranges[0])
-        clear(fft, low_pass_ranges[1])
+        low_pass_ranges.each do |range|
+          clear(fft, range)
+        end
       end
 
       def apply_high_pass!(fft)
         return unless @enable_high
 
-        clear(fft, high_pass_ranges[0])
-        clear(fft, high_pass_ranges[1])
+        high_pass_ranges.each do |range|
+          clear(fft, range)
+        end
       end
 
       def clear(data, range)
