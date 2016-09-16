@@ -4,59 +4,59 @@ StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        2.2 <=        2.2
->         Largest Bin:       17.5 <=       17.5 <=       35.3
->        Mean of Bins:        5.1 <=        5.1 <=        5.1
->      Median of Bins:        2.3 <=        3.8 <=        3.9
->         Sum of Bins:    34697.9 <=    34697.9 <=    35035.2
->                 RMS:        6.0 <=        6.0 <=        8.6
+>        Smallest Bin:        0.0 <=        0.1 <=        0.1
+>         Largest Bin:        7.6 <=       15.2 <=       15.2
+>        Mean of Bins:        0.7 <=        1.4 <=        1.4
+>      Median of Bins:        0.1 <=        0.6 <=        0.6
+>         Sum of Bins:     4818.9 <=     9701.5 <=     9701.6
+>                 RMS:        1.3 <=        2.6 <=        2.6
 125Hz/96kHz, Window=8192, Filtered:
 Sin125Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        2.2 <=        2.2
->         Largest Bin:       17.5 <=       17.5 <=       35.3
->        Mean of Bins:        5.1 <=        5.1 <=        5.1
->      Median of Bins:        2.3 <=        3.8 <=        3.9
->         Sum of Bins:    34697.9 <=    34697.9 <=    35035.2
->                 RMS:        6.0 <=        6.0 <=        8.6
+>        Smallest Bin:        0.0 <=        0.1 <=        0.1
+>         Largest Bin:        7.6 <=       15.2 <=       15.2
+>        Mean of Bins:        0.7 <=        1.4 <=        1.4
+>      Median of Bins:        0.1 <=        0.6 <=        0.6
+>         Sum of Bins:     4818.9 <=     9701.5 <=     9701.6
+>                 RMS:        1.3 <=        2.6 <=        2.6
 250Hz/96kHz, Window=8192, Unfiltered:
 Sin250Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        2.3 <=        2.3
->         Largest Bin:     3303.6 <=     3428.9 <=     6762.1
->        Mean of Bins:       12.3 <=       12.4 <=       12.6
->      Median of Bins:        4.1 <=        4.2 <=        4.5
->         Sum of Bins:    83961.3 <=    84796.1 <=    85992.4
->                 RMS:       73.9 <=       74.8 <=      114.6
+>        Smallest Bin:        0.0 <=        0.2 <=        0.2
+>         Largest Bin:     5833.5 <=     5833.5 <=     6254.2
+>        Mean of Bins:        6.0 <=       11.0 <=       11.0
+>      Median of Bins:        0.5 <=        1.3 <=        1.3
+>         Sum of Bins:    41057.8 <=    75174.6 <=    75174.6
+>                 RMS:       92.5 <=      108.8 <=      109.1
 250Hz/96kHz, Window=8192, Filtered:
 Sin250Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        2.3 <=        2.3
->         Largest Bin:     3303.6 <=     3428.9 <=     6762.1
->        Mean of Bins:       12.3 <=       12.4 <=       12.6
->      Median of Bins:        4.1 <=        4.2 <=        4.5
->         Sum of Bins:    83961.3 <=    84796.1 <=    85992.4
->                 RMS:       73.9 <=       74.8 <=      114.6
+>        Smallest Bin:        0.0 <=        0.2 <=        0.2
+>         Largest Bin:     5833.5 <=     5833.5 <=     6254.2
+>        Mean of Bins:        6.0 <=       11.0 <=       11.0
+>      Median of Bins:        0.5 <=        1.3 <=        1.3
+>         Sum of Bins:    41057.8 <=    75174.6 <=    75174.6
+>                 RMS:       92.5 <=      108.8 <=      109.1
 500Hz/96kHz, Window=8192, Unfiltered:
 Sin500Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        2.3 <=        2.4
->         Largest Bin:    26887.9 <=    27431.4 <=    27431.4
->        Mean of Bins:       26.0 <=       26.9 <=       27.4
->      Median of Bins:        5.1 <=        5.2 <=        5.3
->         Sum of Bins:   177389.2 <=   183845.6 <=   186976.1
+>        Smallest Bin:        0.0 <=        0.4 <=        0.4
+>         Largest Bin:    23244.9 <=    23689.8 <=    31285.0
+>        Mean of Bins:       16.6 <=       29.3 <=       29.3
+>      Median of Bins:        1.1 <=        3.5 <=        3.5
+>         Sum of Bins:   113564.3 <=   199768.8 <=   200178.6
 >                 RMS:      396.4 <=      396.6 <=      396.6
 500Hz/96kHz, Window=8192, Filtered:
 Sin500Hz@0dB24bit96kHzM.caf: Starting task...
@@ -64,11 +64,11 @@ StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        2.3 <=        2.4
->         Largest Bin:    26887.9 <=    27431.4 <=    27431.4
->        Mean of Bins:       26.0 <=       26.9 <=       27.4
->      Median of Bins:        5.1 <=        5.2 <=        5.3
->         Sum of Bins:   177389.2 <=   183845.6 <=   186976.1
+>        Smallest Bin:        0.0 <=        0.4 <=        0.4
+>         Largest Bin:    23244.9 <=    23689.8 <=    31285.0
+>        Mean of Bins:       16.6 <=       29.3 <=       29.3
+>      Median of Bins:        1.1 <=        3.5 <=        3.5
+>         Sum of Bins:   113564.3 <=   199768.8 <=   200178.6
 >                 RMS:      396.4 <=      396.6 <=      396.6
 1000Hz/96kHz, Window=8192, Unfiltered:
 Sin1000Hz@0dB24bit96kHzM.caf: Starting task...
@@ -76,11 +76,11 @@ StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        0.9 <=        0.9
->         Largest Bin:    26412.6 <=    26412.6 <=    27430.2
->        Mean of Bins:       25.4 <=       27.8 <=       27.8
->      Median of Bins:        2.2 <=        5.5 <=        5.5
->         Sum of Bins:   173172.0 <=   189903.4 <=   189903.4
+>        Smallest Bin:        0.0 <=        1.6 <=        1.6
+>         Largest Bin:    23011.1 <=    23011.1 <=    31275.3
+>        Mean of Bins:       17.9 <=       31.0 <=       31.0
+>      Median of Bins:        3.2 <=        6.7 <=        6.8
+>         Sum of Bins:   122081.6 <=   211342.9 <=   211342.9
 >                 RMS:      396.4 <=      396.6 <=      396.6
 1000Hz/96kHz, Window=8192, Filtered:
 Sin1000Hz@0dB24bit96kHzM.caf: Starting task...
@@ -88,11 +88,11 @@ StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        0.9 <=        0.9
->         Largest Bin:    26412.6 <=    26412.6 <=    27430.2
->        Mean of Bins:       25.4 <=       27.8 <=       27.8
->      Median of Bins:        2.2 <=        5.5 <=        5.5
->         Sum of Bins:   173172.0 <=   189903.4 <=   189903.4
+>        Smallest Bin:        0.0 <=        1.6 <=        1.6
+>         Largest Bin:    23011.1 <=    23011.1 <=    31275.3
+>        Mean of Bins:       17.9 <=       31.0 <=       31.0
+>      Median of Bins:        3.2 <=        6.7 <=        6.8
+>         Sum of Bins:   122081.6 <=   211342.9 <=   211342.9
 >                 RMS:      396.4 <=      396.6 <=      396.6
 2000Hz/96kHz, Window=8192, Unfiltered:
 Sin2000Hz@0dB24bit96kHzM.caf: Starting task...
@@ -100,117 +100,117 @@ StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        0.2 <=        0.2
->         Largest Bin:        2.6 <=        2.6 <=        5.9
->        Mean of Bins:        1.0 <=        1.0 <=        1.1
->      Median of Bins:        0.3 <=        0.8 <=        0.9
->         Sum of Bins:     6720.3 <=     6720.3 <=     7824.7
->                 RMS:        1.2 <=        1.2 <=        1.9
+>        Smallest Bin:        0.2 <=        0.9 <=        1.1
+>         Largest Bin:        2.0 <=        6.8 <=        6.8
+>        Mean of Bins:        1.1 <=        2.6 <=        2.6
+>      Median of Bins:        1.0 <=        2.5 <=        2.6
+>         Sum of Bins:     7821.7 <=    17647.3 <=    17647.3
+>                 RMS:        1.2 <=        3.0 <=        3.0
 2000Hz/96kHz, Window=8192, Filtered:
 Sin2000Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        0.2 <=        0.2
->         Largest Bin:        2.6 <=        2.6 <=        5.9
->        Mean of Bins:        1.0 <=        1.0 <=        1.1
->      Median of Bins:        0.3 <=        0.8 <=        0.9
->         Sum of Bins:     6720.3 <=     6720.3 <=     7824.7
->                 RMS:        1.2 <=        1.2 <=        1.9
+>        Smallest Bin:        0.2 <=        0.9 <=        1.1
+>         Largest Bin:        2.0 <=        6.8 <=        6.8
+>        Mean of Bins:        1.1 <=        2.6 <=        2.6
+>      Median of Bins:        1.0 <=        2.5 <=        2.6
+>         Sum of Bins:     7821.7 <=    17647.3 <=    17647.3
+>                 RMS:        1.2 <=        3.0 <=        3.0
 4000Hz/96kHz, Window=8192, Unfiltered:
 Sin4000Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        0.1 <=        0.1
->         Largest Bin:        0.4 <=        0.4 <=        0.7
->        Mean of Bins:        0.2 <=        0.2 <=        0.2
->      Median of Bins:        0.1 <=        0.2 <=        0.2
->         Sum of Bins:     1341.0 <=     1495.8 <=     1495.8
->                 RMS:        0.2 <=        0.2 <=        0.3
+>        Smallest Bin:        0.2 <=        0.6 <=        0.6
+>         Largest Bin:        0.7 <=        1.5 <=        1.8
+>        Mean of Bins:        0.6 <=        1.0 <=        1.0
+>      Median of Bins:        0.6 <=        1.0 <=        1.0
+>         Sum of Bins:     4222.6 <=     6877.1 <=     6877.1
+>                 RMS:        0.6 <=        1.1 <=        1.2
 4000Hz/96kHz, Window=8192, Filtered:
 Sin4000Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        0.1 <=        0.1
->         Largest Bin:        0.4 <=        0.4 <=        0.7
->        Mean of Bins:        0.2 <=        0.2 <=        0.2
->      Median of Bins:        0.1 <=        0.2 <=        0.2
->         Sum of Bins:     1341.0 <=     1495.8 <=     1495.8
->                 RMS:        0.2 <=        0.2 <=        0.3
+>        Smallest Bin:        0.2 <=        0.6 <=        0.6
+>         Largest Bin:        0.7 <=        1.5 <=        1.8
+>        Mean of Bins:        0.6 <=        1.0 <=        1.0
+>      Median of Bins:        0.6 <=        1.0 <=        1.0
+>         Sum of Bins:     4222.6 <=     6877.1 <=     6877.1
+>                 RMS:        0.6 <=        1.1 <=        1.2
 8000Hz/96kHz, Window=8192, Unfiltered:
 Sin8000Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        0.0 <=        0.0
->         Largest Bin:        0.0 <=        0.0 <=        0.2
->        Mean of Bins:        0.0 <=        0.0 <=        0.1
->      Median of Bins:        0.0 <=        0.0 <=        0.0
->         Sum of Bins:      185.6 <=      185.6 <=      371.5
->                 RMS:        0.0 <=        0.0 <=        0.1
+>        Smallest Bin:        0.1 <=        0.1 <=        0.3
+>         Largest Bin:        0.1 <=        0.8 <=        0.8
+>        Mean of Bins:        0.1 <=        0.5 <=        0.5
+>      Median of Bins:        0.1 <=        0.5 <=        0.5
+>         Sum of Bins:      865.3 <=     3229.4 <=     3229.4
+>                 RMS:        0.1 <=        0.6 <=        0.6
 8000Hz/96kHz, Window=8192, Filtered:
 Sin8000Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        0.0 <=        0.0
->         Largest Bin:        0.0 <=        0.0 <=        0.2
->        Mean of Bins:        0.0 <=        0.0 <=        0.1
->      Median of Bins:        0.0 <=        0.0 <=        0.0
->         Sum of Bins:      185.6 <=      185.6 <=      371.5
->                 RMS:        0.0 <=        0.0 <=        0.1
+>        Smallest Bin:        0.1 <=        0.1 <=        0.3
+>         Largest Bin:        0.1 <=        0.8 <=        0.8
+>        Mean of Bins:        0.1 <=        0.5 <=        0.5
+>      Median of Bins:        0.1 <=        0.5 <=        0.5
+>         Sum of Bins:      865.3 <=     3229.4 <=     3229.4
+>                 RMS:        0.1 <=        0.6 <=        0.6
 16000Hz/96kHz, Window=8192, Unfiltered:
 Sin16000Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        0.0 <=        0.0
->         Largest Bin:        0.0 <=        0.0 <=        0.0
->        Mean of Bins:        0.0 <=        0.0 <=        0.0
->      Median of Bins:        0.0 <=        0.0 <=        0.0
->         Sum of Bins:       85.0 <=       85.0 <=       85.0
->                 RMS:        0.0 <=        0.0 <=        0.0
+>        Smallest Bin:        0.0 <=        0.2 <=        0.2
+>         Largest Bin:        0.2 <=        0.2 <=        0.4
+>        Mean of Bins:        0.2 <=        0.2 <=        0.2
+>      Median of Bins:        0.2 <=        0.2 <=        0.2
+>         Sum of Bins:     1482.9 <=     1482.9 <=     1482.9
+>                 RMS:        0.2 <=        0.2 <=        0.3
 16000Hz/96kHz, Window=8192, Filtered:
 Sin16000Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        0.0 <=        0.0
->         Largest Bin:        0.0 <=        0.0 <=        0.0
->        Mean of Bins:        0.0 <=        0.0 <=        0.0
->      Median of Bins:        0.0 <=        0.0 <=        0.0
->         Sum of Bins:       85.0 <=       85.0 <=       85.0
->                 RMS:        0.0 <=        0.0 <=        0.0
+>        Smallest Bin:        0.0 <=        0.2 <=        0.2
+>         Largest Bin:        0.2 <=        0.2 <=        0.4
+>        Mean of Bins:        0.2 <=        0.2 <=        0.2
+>      Median of Bins:        0.2 <=        0.2 <=        0.2
+>         Sum of Bins:     1482.9 <=     1482.9 <=     1482.9
+>                 RMS:        0.2 <=        0.2 <=        0.3
 22050Hz/96kHz, Window=8192, Unfiltered:
 Sin22050Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        0.0 <=        0.0
->         Largest Bin:        0.0 <=        0.0 <=        0.1
->        Mean of Bins:        0.0 <=        0.0 <=        0.0
->      Median of Bins:        0.0 <=        0.0 <=        0.0
->         Sum of Bins:       24.2 <=       55.9 <=       55.9
->                 RMS:        0.0 <=        0.0 <=        0.0
+>        Smallest Bin:        0.0 <=        0.0 <=        0.1
+>         Largest Bin:        0.2 <=        0.4 <=        0.4
+>        Mean of Bins:        0.1 <=        0.2 <=        0.2
+>      Median of Bins:        0.1 <=        0.2 <=        0.2
+>         Sum of Bins:      971.4 <=     1113.1 <=     1288.3
+>                 RMS:        0.2 <=        0.2 <=        0.2
 22050Hz/96kHz, Window=8192, Filtered:
 Sin22050Hz@0dB24bit96kHzM.caf: Starting task...
 StreamFilter: Starting task...
 StreamFilter: Waiting for task to end...
 StreamFilter: Task has ended!
 StreamReporter[00117, 00000]:
->        Smallest Bin:        0.0 <=        0.0 <=        0.0
->         Largest Bin:        0.0 <=        0.0 <=        0.1
->        Mean of Bins:        0.0 <=        0.0 <=        0.0
->      Median of Bins:        0.0 <=        0.0 <=        0.0
->         Sum of Bins:       24.2 <=       55.9 <=       55.9
->                 RMS:        0.0 <=        0.0 <=        0.0
+>        Smallest Bin:        0.0 <=        0.0 <=        0.1
+>         Largest Bin:        0.2 <=        0.4 <=        0.4
+>        Mean of Bins:        0.1 <=        0.2 <=        0.2
+>      Median of Bins:        0.1 <=        0.2 <=        0.2
+>         Sum of Bins:      971.4 <=     1113.1 <=     1288.3
+>                 RMS:        0.2 <=        0.2 <=        0.2
