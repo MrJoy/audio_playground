@@ -35,8 +35,8 @@ module AudioPlayground
 
       def normalize(frame); frame / frame.length; end
 
-      def fft_forward(frame); NumRu::FFTW3.fft(frame, -1, 0); end
-      def fft_backward(frame); NumRu::FFTW3.fft(frame, 1, 0); end
+      def fft_forward(frame); NumRu::FFTW3.fft(frame, NumRu::FFTW3::FORWARD); end
+      def fft_backward(frame); NumRu::FFTW3.fft(frame, NumRu::FFTW3::BACKWARD); end
 
       # TODO: Actually check the device!
       def output_channels; 0..1; end
